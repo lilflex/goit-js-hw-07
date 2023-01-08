@@ -21,6 +21,27 @@ galleryItems.forEach(element => {
 	items.push(galleryItem)
 })
 
+// galleryItems.forEach(element => {
+//     console.log(element);
+//     const galleryItem = document.createElement('div')
+//     const galleryLink = document.createElement('a')
+//     const galleryImage = document.createElement('img')
+  
+//     galleryItem.setAttribute('class', 'gallery__item')
+  
+//     galleryLink.setAttribute('class', 'gallery_link')
+//     galleryLink.setAttribute('href', element.original)
+
+//     galleryImage.setAttribute('class', 'gallery__image')  
+//     galleryImage.setAttribute('src', element.preview)
+//     galleryImage.setAttribute('data-source', element.original)
+//     galleryImage.setAttribute('alt', element.description)
+  
+//     galleryItem.append(galleryLink)
+//     galleryLink.append(galleryImage)
+//     items.push(galleryItem)
+//   })
+
 gallery.append(...items)
 
 gallery.addEventListener('click', e => {
